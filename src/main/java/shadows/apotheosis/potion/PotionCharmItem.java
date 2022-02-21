@@ -74,7 +74,7 @@ public class PotionCharmItem extends Item {
 
 	@Override
 	public boolean isEnchantable(ItemStack stack) {
-		return false;
+		return true;
 	}
 
 	@Override
