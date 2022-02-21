@@ -33,7 +33,7 @@ import shadows.apotheosis.Apotheosis;
 public class PotionCharmItem extends Item {
 
 	public PotionCharmItem() {
-		super(new Item.Properties().stacksTo(1).durability(192).tab(Apotheosis.APOTH_GROUP).setNoRepair());
+		super(new Item.Properties().stacksTo(1).durability(192).tab(Apotheosis.APOTH_GROUP));
 	}
 
 	@Override
@@ -74,12 +74,9 @@ public class PotionCharmItem extends Item {
 
 	@Override
 	public boolean isEnchantable(ItemStack stack) {
-		return false;
+		return true;
 	}
 
-	@Override
-	public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-		return false;
 	}
 
 	@Override
